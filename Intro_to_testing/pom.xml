@@ -24,7 +24,7 @@
             <groupId>org.mockito</groupId>
             <artifactId>mockito-junit-jupiter</artifactId>
             <version>5.11.0</version>
-            <scope>Test</scope>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>

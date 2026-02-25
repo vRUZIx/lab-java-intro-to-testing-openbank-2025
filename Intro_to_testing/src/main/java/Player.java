@@ -37,8 +37,12 @@ public abstract class Player {
         }
     }
     public void attack(Player playerToAttack){
-
+        playerToAttack.setHealth(playerToAttack.getHealth() - this.strength);
+        playerToAttack.checkHealth();
     }
-
-
+    public void checkHealth(){
+        if(this.health <= 0){
+            decrementLive();
+        }
+    }
 }
